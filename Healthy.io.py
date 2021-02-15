@@ -15,6 +15,4 @@ for root, dirs, files in os.walk("e"):
         ##Actual name change
         #os.system("mv " + root + "\\" + filename + root + "\\" + str(date_time_obj.date()) + "T" + current_time)
 
-
-
-    #aws s3 --recursive mv s3://efibackups/<folder_name_from> s3://efibackups/<folder_name_to>
+    aws s3 --recursive mv s3://efibackups/<folder_name_from> s3://efibackups/<folder_name_to>
